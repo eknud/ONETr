@@ -1,0 +1,37 @@
+\name{setCreds}
+\alias{setCreds}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{
+Set O*NET API credentials for functional use.
+}
+\description{
+This function allows you to store your O*NET API developer credentials for easy authentication when calling package functions. This function must be used before any other function in the package.
+}
+\usage{
+setCreds(user, pass)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{user}{
+O*NET API developer username
+}
+  \item{pass}{
+O*NET API developer password
+}
+}
+\value{
+An list to store the API username and password for access by the package functions.
+}
+\author{
+Eric Knudsen
+}
+
+\examples{
+  \dontrun{
+    setCreds("sampleuser","samplepassword")
+  }
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ ~credentials }
+\keyword{ ~authentication }% __ONLY ONE__ keyword per line
