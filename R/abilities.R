@@ -9,6 +9,6 @@ function(list){
     return(abilities)
   }
   else{
-    print("That type of data is missing or incomplete for this occupation.")
+    message("That type of data is missing or incomplete for this occupation.")
   }
 }

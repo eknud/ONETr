@@ -7,7 +7,7 @@ function(soc){
     rootNode <- xmlRoot(raw)
     list <- xmlToList(rootNode)
     if(length(list) == 1){
-      stop("The data for this occupation are not in proper format. Package functions will not operate correctly.")
+      stop("Error: Check that the correct login credentials are stored with setCreds(). If they are correct, this is either an invalid O*NET-SOC code or the data for this occupation contain an error. Try again or access the information manually online.")
     }
     else{
       return(list)
