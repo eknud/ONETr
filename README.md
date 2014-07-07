@@ -7,7 +7,7 @@ Using ONETr
 -----------
 <b>Note</b>: User must be registered for an account with <a href="http://services.onetcenter.org/" target="_blank">O*NET Web Services</a> and have login credentials (specifically, a username and password) for the API.
 
-Install from CRAN: <code>install.packages("ONETr")</code>
+<b>Install from CRAN</b>: <code>install.packages("ONETr")</code>
 
 or
 
