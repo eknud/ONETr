@@ -11,14 +11,14 @@ Install from CRAN: <code>install.packages("ONETr")</code>
 
 or
 
-Install from GitHub:
+<b>Install from GitHub</b>:
 <ol>
 <li>If not installed already, install dependencies (<code>RCurl</code> and <code>XML</code>) and <code>devtools</code> package: <code>install.packages("RCurl","XML","devtools")</code>.</li>
 <li>Call <code>library(devtools)</code> to prepare for GitHub installation.</li>
 <li>Use <code>install_github("ONETr",username="eknud")</code> to install the ONETr package.</li>
 </ol>
 
-To use the package:
+<b>To use the package</b>:
 <ol>
 <li>Initiate ONETr: <code>library(ONETr)</code></li>
 <li>Set API credentials provided by O*NET Web Services: <code>setCreds("username","password")</li>
