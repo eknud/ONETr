@@ -12,12 +12,15 @@ Install from CRAN: <code>install.packages("ONETr")</code>
 or
 
 Install from GitHub:
-1. If not installed already, install dependencies (<code>RCurl</code> and <code>XML</code>) and <code>devtools</code> package: <code>install.packages("RCurl","XML","devtools")</code>.
-2. Call <code>library(devtools)</code> to prepare for GitHub installation.
-3. Use <code>install_github("ONETr",username="eknud")</code> to install the ONETr package.
+<ol>
+<li>If not installed already, install dependencies (<code>RCurl</code> and <code>XML</code>) and <code>devtools</code> package: <code>install.packages("RCurl","XML","devtools")</code>.</li>
+<li>Call <code>library(devtools)</code> to prepare for GitHub installation.</li>
+<li>Use <code>install_github("ONETr",username="eknud")</code> to install the ONETr package.</li>
 
 To use the package:
-1. Initiate ONETr: <code>library(ONETr)</code>
-2. Set API credentials provided by O*NET Web Services: <code>setCreds("username","password")
-3. Use <code>keySearch</code> and <code>socSearch</code> to search for and store occupational data.
-4. Once job data is stored (using <code>socSearch</code>), all package functions should now be equipped to run. Read ONETr manual for detailed description of each function.
+<ol>
+<li>Initiate ONETr: <code>library(ONETr)</code></li>
+<li>Set API credentials provided by O*NET Web Services: <code>setCreds("username","password")</li>
+<li>Use <code>keySearch</code> and <code>socSearch</code> to search for and store occupational data.</li
+<li>Once job data is stored (using <code>socSearch</code>), all package functions should now be equipped to run. Read ONETr manual for detailed description of each function.</li>
+</ol>
