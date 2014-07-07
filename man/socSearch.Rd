@@ -28,7 +28,7 @@ May not work if data are not properly formatted.
 
 \examples{
   \dontrun{
-      # You need to set your credentials with \code{setCreds} prior to use.
+      # You need to set your credentials with setCreds() prior to use.
       socSearch("19-3031.02")
   }
 }

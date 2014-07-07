@@ -27,9 +27,8 @@ Eric Knudsen
 }
 
 \examples{
-  \dontrun{
+    # store API username and password
     setCreds("sampleuser","samplepassword")
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

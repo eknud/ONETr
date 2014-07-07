@@ -25,7 +25,7 @@ Maintainer: Eric Knudsen <eknudsen@gc.cuny.edu>
 \keyword{ occupations }
 \examples{
   \dontrun{
-      setCreds(username,password) # must have O*NET API developer account
+      setCreds("username","password") # must have O*NET API developer account
       keySearch("psychologist")
       socSearch("19-3031.02")
   }

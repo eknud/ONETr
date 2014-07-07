@@ -2,7 +2,7 @@ socSearch <-
 function(soc){
     # call api and parse xml
     baseURL <- "http://services.onetcenter.org/v1.2/ws/online/occupations/"
-    output <- getURL(paste(baseURL,soc,"/summary",sep=""), userpwd=paste(creds[[1]],":",creds[[2]], sep=""), httpauth = 1L)
+    output <- getURL(paste(baseURL,soc,"/summary",sep=""), userpwd=paste(get("creds",envir=cacheEnv)[[1]],":",get("creds",envir=cacheEnv)[[2]], sep=""), httpauth = 1L)
     raw <- xmlInternalTreeParse(output)
     rootNode <- xmlRoot(raw)
     list <- xmlToList(rootNode)

@@ -29,10 +29,9 @@ May not work if data are not properly formatted.
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{
-  \dontrun{
-   # You need to set your credentials with \code{setCreds} prior to use.
+   data(jobData)
+   # You need to set your credentials with setCreds() prior to use.
    workValues(jobData)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
