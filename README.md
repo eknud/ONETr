@@ -3,8 +3,9 @@ ONETr
 
 ONETr is a package for R that facilitates interaction with the <a href="http://www.onetonline.org/" target="_blank">O\*NET</a> API.  The functions can perform searches of the occupational data based on keywords or O\*NET-SOC codes, and parse the XML output into a <code>list</code> object. Then, individual functions can extract specific data as desired (see ONETr manual for more information).
 
-This software is released under the MIT license.
-Copyright (c) 2014 Eric Knudsen
+This software is released under the GPL-3 license.
+
+Copyright &copy; 2014 Eric Knudsen
 
 Using ONETr
 -----------
