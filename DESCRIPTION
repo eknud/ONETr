@@ -1,7 +1,7 @@
 Package: ONETr
 Type: Package
 Title: Efficient authenticated interaction with the O*NET API.
-Version: 0.1-2
+Version: 1.0
 Date: 2014-09-08
 Author: Eric Knudsen
 Maintainer: Eric Knudsen <eknudsen@gc.cuny.edu>
