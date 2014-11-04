@@ -1,10 +1,10 @@
 Package: ONETr
 Type: Package
-Title: Efficient authenticated interaction with the O*NET™ API.
-Version: 1.0
-Date: 2014-09-08
+Title: Efficient authenticated interaction with the O*NET API.
+Version: 1.0.1
+Date: 2014-11-03
 Author: Eric Knudsen
 Maintainer: Eric Knudsen <eknudsen@gc.cuny.edu>
-Description: This package provides a series of functions designed to enable users to easily search and interact with occupational data from the O*NET™ API <www.onetonline.org>. The package produces parsed and listed XML data for custom interactions, or pre-packaged functions for easy extraction of specific data (e.g., Knowledge, Skills, Abilities, Work Styles, etc.).
+Description: This package provides a series of functions designed to enable users to easily search and interact with occupational data from the O*NET API <www.onetonline.org>. The package produces parsed and listed XML data for custom interactions, or pre-packaged functions for easy extraction of specific data (e.g., Knowledge, Skills, Abilities, Work Styles, etc.).
 Depends: XML, RCurl
 License: GPL-3

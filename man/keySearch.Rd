@@ -5,7 +5,7 @@
 Search O*NET by keyword.
 }
 \description{
-This function allows you to search O*NET™ occupations using a keyword, and receive the results in a data frame.
+This function allows you to search O*NET occupations using a keyword, and receive the results in a data frame.
 }
 \usage{
 keySearch(keyword)
