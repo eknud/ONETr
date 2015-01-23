@@ -5,7 +5,7 @@ ONETr is a package for R that facilitates interaction with the <a href="http://w
 
 This software is released under the GPL-3 license.
 
-Copyright &copy; 2014 Eric Knudsen
+Copyright &copy; 2015 Eric Knudsen
 
 Using ONETr
 -----------
