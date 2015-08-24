@@ -8,7 +8,7 @@ Similarity indices for job attributes
 Computes the Sorensen-Dice and/or Jaccard indices of similarity between two jobs on the named data type (e.g., knowledge, skills, etc.).
 }
 \usage{
-sim.index <- function(list1, list2, FUN, index=c("sd", "ji", "all"))
+sim.index(list1, list2, FUN, index=c("sd", "ji", "all"))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

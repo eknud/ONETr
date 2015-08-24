@@ -3,8 +3,8 @@ sim.index <- function(list1, list2, FUN, index=c("sd","ji","all")){
   job2 <- FUN(list2)
   if(".attrs.id" %in% names(job1) & ".attrs.id" %in% names(job2)){
       if(index == "sd"){
-        sd <- 2*length(intersect(job1$.attrs.id,job2$.attrs.id))/(length(unique(job1$.attrs.id))+length(unique(job2$.attrs.id))) # Sørensen–Dice index
-        list("Sørensen–Dice index"=round(sd,2))
+        sd <- 2*length(intersect(job1$.attrs.id,job2$.attrs.id))/(length(unique(job1$.attrs.id))+length(unique(job2$.attrs.id))) # Sorensen-Dice index
+        list("Sorensen-Dice index"=round(sd,2))
       }
       
       else if(index == "ji"){
@@ -13,9 +13,9 @@ sim.index <- function(list1, list2, FUN, index=c("sd","ji","all")){
       }
       
       else{
-        sd <- 2*length(intersect(job1$.attrs.id,job2$.attrs.id))/(length(unique(job1$.attrs.id))+length(unique(job2$.attrs.id))) # Sørensen–Dice index
+        sd <- 2*length(intersect(job1$.attrs.id,job2$.attrs.id))/(length(unique(job1$.attrs.id))+length(unique(job2$.attrs.id))) # Sorensen-Dice index
         ji <- length(intersect(job1$.attrs.id,job2$.attrs.id))/length(union(job1$.attrs.id,job2$.attrs.id)) # Jaccard index
-        print(list("Sørensen–Dice index"=round(sd,2),"Jaccard index"=round(ji,2))) # print both in a list
+        print(list("Sorensen-Dice index"=round(sd,2),"Jaccard index"=round(ji,2))) # print both in a list
       }
   }
   else{
