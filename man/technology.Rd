@@ -2,7 +2,7 @@
 \alias{technology}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Pull technology data from job extract stored as a list.
+Pull technology data from job list
 }
 \description{
 This function should be used after a \code{socSearch} has been stored. The function extracts technology information for the searched/stored occupation.

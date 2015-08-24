@@ -2,7 +2,7 @@
 \alias{socSearch}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Searches and pulls occupational data based on SOC code.
+Searches and pulls occupational data based on SOC code
 }
 \description{
 This function should be used to extract and store data on a specific job for further analysis/manipulation by package functions.

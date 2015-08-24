@@ -2,7 +2,7 @@
 \alias{keySearch}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Search O*NET by keyword.
+Search O*NET by keyword
 }
 \description{
 This function allows you to search O*NET occupations using a keyword, and receive the results in a data frame.

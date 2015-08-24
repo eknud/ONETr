@@ -2,7 +2,7 @@
 \alias{tools}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Pull tools data from job extract stored as a list.
+Pull tools data from job list
 }
 \description{
 This function should be used after a \code{socSearch} has been stored. The function extracts tools information for the searched/stored occupation.

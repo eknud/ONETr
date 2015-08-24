@@ -2,7 +2,7 @@
 \alias{skills}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Pull skill data from job extract stored as a list.
+Pull skill data from job list
 }
 \description{
 This function should be used after \code{socSearch} has been stored. The function extracts skill information for the searched/stored occupation.

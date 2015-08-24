@@ -2,7 +2,7 @@
 \alias{setCreds}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Set O*NET API credentials for functional use.
+Set O*NET API credentials for functional use
 }
 \description{
 This function allows you to store your O*NET API HTTPS credentials for easy authentication when calling package functions. This function must be used before any other function in the package.

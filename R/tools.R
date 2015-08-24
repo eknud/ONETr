@@ -1,14 +1,11 @@
 tools <-
 function(list){
-  len <- length(list$tools_technology$tools)
-  if(len > 0){
-    tools <- data.frame()
-    for(i in 1:length(list$tools_technology$tools)){
-      tools <- rbind(tools, as.data.frame(list$tools_technology$tools[[i]]$title$text))
-    }
+  len <- 
+  if(length(list$tools_technology$tools) > 0){
+    tools <- ldply((lapply(list$tools_technology$tools, function(x){t(unlist(x))})))
     return(tools)
   }
   else{
-    message("That type of data is missing or incomplete for this occupation.")
+    message("Warning: This type of data is missing or incomplete for this occupation.")
   }
 }

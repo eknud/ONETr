@@ -1,14 +1,10 @@
 tasks <-
 function(list){
-  len <- length(list$tasks)
-  if(len > 0){
-    tasks <- data.frame()
-    for(i in 1:length(list$tasks)){
-      tasks <- rbind(tasks, as.data.frame(list$tasks[[i]]))
-    }
+  if(length(list$tasks) > 0){
+    tasks <- ldply((lapply(list$tasks, function(x){t(unlist(x))})))
     return(tasks)
   }
   else{
-    message("That type of data is missing or incomplete for this occupation.")
+    message("Warning: This type of data is missing or incomplete for this occupation.")
   }
 }

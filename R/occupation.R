@@ -1,14 +1,12 @@
 occupation <-
 function(list){
-  len <- length(list$occupation)
-  if(len > 0){
-    occupation <- data.frame()
-    for(i in 1:3){
-      occupation <- data.frame(code=list$occupation[[1]], title=list$occupation[[2]], description=list$occupation[[4]])
-    }
+  if(length(list$occupation) > 0){
+    occupation <- as.data.frame(t(ldply((lapply(list$occupation[c(1,2,4)], function(x){t(unlist(x))})))))
+    names(occupation) <- names(list$occupation[c(1,2,4)])
+    occupation <- cbind(occupation, ldply((lapply(list$occupation[3], function(x){t(unlist(x))})))[,2:3])[2,]
     return(occupation)
   }
   else{
-    message("That type of data is missing or incomplete for this occupation.")
+    message("Warning: This type of data is missing or incomplete for this occupation.")
   }
 }

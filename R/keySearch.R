@@ -10,6 +10,8 @@ function(keyword){
       else{
         output <- xmlParse(output)
         keyOutput <- xmlToDataFrame(nodes = getNodeSet(output, "//career"))
+        message("Find a SOC code below and use with socSearch() function to pull job data.")
         return(keyOutput[,1:2])
       }
+      
 }

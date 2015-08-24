@@ -2,7 +2,7 @@
 \alias{workContext}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Pull work context data from job extract stored as a list.
+Pull work context data from job list
 }
 \description{
 This function should be used after a \code{socSearch} has been stored. The function extracts work context information for the searched/stored occupation.

@@ -2,7 +2,7 @@
 \alias{jobZone}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Pull "Job Zone" data from job extract stored as a list.
+Pull "Job Zone" data from job list
 }
 \description{
 This function should be used after a \code{socSearch} has been stored. The function extracts "Job Zone" information for the searched/stored occupation.

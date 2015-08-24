@@ -1,14 +1,10 @@
 jobZone <-
 function(list){
-  len <- length(list$job_zone)
-  if(len > 0){
-    job_zone <- data.frame()
-    for(i in 1:length(list$job_zone)){
-      job_zone <- rbind(job_zone, as.data.frame(list$job_zone[[i]]))
-    }
+  if(length(list$job_zone) > 0){
+    job_zone <- ldply((lapply(list$job_zone, function(x){t(unlist(x))})))
     return(job_zone)
   }
   else{
-    message("That type of data is missing or incomplete for this occupation.")
+    message("Warning: This type of data is missing or incomplete for this occupation.")
   }
 }

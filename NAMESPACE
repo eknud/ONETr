@@ -1,2 +1,2 @@
 exportPattern("^[[:alpha:]]+")
-import(RCurl, XML)
+import(RCurl, XML, plyr)
