@@ -2,7 +2,7 @@ jobSearch <- function(input, type = c("keyword", "soc")){
     if(type == "soc"){
             # call api and parse xml
             baseURL <- "https://services.onetcenter.org/ws/online/occupations/"
-            output <- getURL(paste(baseURL,input,"/details",sep=""), userpwd=paste(get("creds",envir=cacheEnv)[[1]],":",get("creds",envir=cacheEnv)[[2]], sep=""), httpauth = 1L)
+            output <- getURL(paste(baseURL,input,"/details?display=long",sep=""), userpwd=paste(get("creds",envir=cacheEnv)[[1]],":",get("creds",envir=cacheEnv)[[2]], sep=""), httpauth = 1L)
             if(grepl("Authorization Error",output)){
                     message("Error: Your API credentials are invalid. Please enter valid HTTPS credentials using setCreds().")
             }
