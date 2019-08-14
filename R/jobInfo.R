@@ -4,7 +4,7 @@ function(list, type = c("jt", "k", "s", "a", "wa", "wc", "ws", "wv", "e", "tool"
                            full = c("occupation", "knowledge", "skills", "abilities", "work_activities", "work_context", "work_styles", "work_values","education", "tools_technology", "tools_technology", "tasks"),
                            depth = c(2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1),
                            secondary = c("sample_of_reported_job_titles", "", "", "", "", "", "", "", "level_required", "tools", "technology", ""))
-  key <- dict$full[which(dict$arg == type)]
+  key <- as.character(dict$full[which(dict$arg == type)])
   depth <- dict$depth[which(dict$arg == type)]
   if(depth == 2){
           second_level <- dict$secondary[which(dict$arg == type)]
