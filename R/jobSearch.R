@@ -1,4 +1,5 @@
-jobSearch <- function(input, type = c("keyword", "soc")){
+jobSearch <- function(input_raw, type = c("keyword", "soc")){
+    input <- gsub(" ", "%20", input_raw)
     if(type == "soc"){
             # call api and parse xml
             baseURL <- "https://services.onetcenter.org/ws/online/occupations/"
