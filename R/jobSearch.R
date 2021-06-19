@@ -18,6 +18,7 @@ jobSearch <- function(input_raw, type = c("keyword", "soc")){
             }
     }
    if(type == "keyword"){
+       if(is.na(input)){ return(data.frame(code = NA, title = NA)) } else {
            output <- getURL(paste("https://services.onetcenter.org/ws/mnm/search?keyword=",input,sep=""), userpwd=paste(get("creds",envir=cacheEnv)[[1]],":",get("creds",envir=cacheEnv)[[2]], sep=""), httpauth = 1L)
            if(grepl("Authorization Error",output)){
                    message("Your API credentials are invalid. Please enter valid HTTPS credentials using setCreds().")
@@ -31,6 +32,7 @@ jobSearch <- function(input_raw, type = c("keyword", "soc")){
                    message("Find a SOC code below and search again using type = 'soc' to pull job data.")
                    return(keyOutput[,1:2])
            }
+       }
    }
    if(type != "keyword" && type != "soc"){
            message("Invalid search type. Please indicate whether your search is is a 'keyword' search or a 'soc' search.")
